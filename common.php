@@ -6,7 +6,7 @@ function _POST($value){
 //连接数据库
 function connect_mydb(){
 	global $mydb;
-	$mydb = mysqli_connect("localhost","root","12345678","zhangben");
+	$mydb = mysqli_connect("127.0.0.1:3366","test2","12345678","zhangben");
 	if (!$mydb)
  	{
   		die('链接不到数据库');
